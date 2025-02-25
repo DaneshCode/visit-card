@@ -70,3 +70,31 @@ div.call p {
   padding-right: 5px;
   font-family: Arial;
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  /* Adjust bio container margins, width, and padding */
+  div.bio {
+    margin: 20px;
+    max-width: 95%;
+    padding: 15px;
+  }
+  /* Remove absolute positioning from .call and adjust layout */
+  div.call {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+    /* Optional: adjust border radius if needed */
+    border-radius: 10px;
+  }
+  /* Adjust image sizing */
+  div.call img {
+    width: 100%;
+    height: auto;
+  }
+  /* Optionally adjust font sizes */
+  div.call i,
+  div.call p {
+    font-size: 0.9rem;
+  }
+}
