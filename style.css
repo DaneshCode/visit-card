@@ -16,6 +16,12 @@
 body {
   text-align: center;
   background-color: var(--avatar-bg);
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 div.bio {
@@ -69,6 +75,26 @@ div.call p {
   display: inline-block;
   padding-right: 5px;
   font-family: Arial;
+}
+
+.made {
+  padding: 0 0 1rem 0;
+  text-align: center;
+}
+.made a > i {
+  font-size: x-large;
+}
+
+.made a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+
+.made a:hover {
+  color: #4f51e5;
+  text-decoration: underline;
 }
 
 /* Responsive adjustments */
